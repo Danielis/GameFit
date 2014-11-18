@@ -1,12 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Bootstrap 101 Template</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>GameFit</title>
+    <!-- Bootstrap Core CSS-->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <!-- Custom Styles -->
     <link rel="stylesheet" href="css/main.css">
   </head>
+
   <body>
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
@@ -25,14 +31,27 @@
             <li class="active"><a href="#">GameFit</a></li>
             <li><a href="#about"> Features</a></li>
             <li><a href="#contact">Documentation</a></li>
-            <li><a href="#contact">Rates</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
-        </div><!--/.nav-collapse -->
+        </div>
       </div>
     </nav>
 
+   <!-- <div class="masthead clearfix">
+     <div class="inner">
+       <nav>
+         <ul class="nav masthead-nav">
+           <li class="active"><a href="#">GameFit</a></li>
+           <li><a href="#">Features</a></li>
+           <li><a href="#">Documentation</a></li>
+           <li><a href="#">Contact</a></li>
+         </ul>
+       </nav>
+     </div>
+   </div> 
+ -->
     <div id="mainwrap">
-    	<div id="myCarousel" class="carousel slide">
+    	<div id="myCarousel" class="carousel slide" data-ride="carousel">
 		  <ol class="carousel-indicators">
 		    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 		    <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -45,7 +64,7 @@
 		    	<img src="images/Reaper.png">
 		    	<div class="container">
 		    		<div class="carousel-caption">
-						<h1> Personalize your game - gamer/fitness image</h1>		    	
+						<h1>Personalize your game</h1>		    	
 					</div>
 				</div>
 
@@ -54,7 +73,7 @@
 		    	<img src="images/league.png">
 		    	<div class="container">
 		    		<div class="carousel-caption">
-						<h1> Remove the hassle - All the APIs BOTS </h1>		    	
+						<h1>Remove the hassle</h1>		    	
 					</div>
 				</div>
 		    </div>
@@ -62,7 +81,7 @@
 		    	<img src="images/skyrim.jpg">
 		    	<div class="container">
 		    		<div class="carousel-caption">
-						<h1> Simplify the Data - One simple score/ Metrics</h1>		    	
+						<h1>Simplify the Data - One simple score/Metrics</h1>		    	
 					</div>
 				</div>
 		    </div>
@@ -70,25 +89,33 @@
 		    	<img src="images/league.png">
 		    	<div class="container">
 		    		<div class="carousel-caption">
-						<h1> Easy to Integrate - easy to integrate image</h1>		    	
+						<h1>Easy to Integrate</h1>		    	
 					</div>
 				</div>
 		    </div>
 		  </div>
 		  <!-- Carousel nav -->
-		  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-		  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
-		</div>
-		<div class="signupcontainer">
+		 <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+		   <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		   <span class="sr-only">Previous</span>
+		 </a>
+		 <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+		   <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		   <span class="sr-only">Next</span>
+		 </a> 
+		</div> <!-- end carousel -->
+
+		<div class="signup-container">
+			<div class="mission-text">
+				<h3>We provide you the tools to encourage players to be active and change how the world views gaming.</h3>
+			</div>
+			
 	    	<form class="form-signin" role="form">
-    			<button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
+	    		<input type="email" id="inputEmail" class="form-control" placeholder="Email address">
+    			<button id="signup-button" class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
   			</form>
 		</div>
 	</div>
-
-
-
-
 
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="dist/js/bootstrap.min.js"></script>
