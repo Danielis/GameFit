@@ -9,6 +9,7 @@
     <title>GameFit</title>
     <!-- Bootstrap Core CSS-->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/simple-sidebar.css" rel="stylesheet">
     <!-- Custom Styles -->
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -38,31 +39,39 @@
         </div>
     </nav>
 
-    <div id="mainwrap">
-        <div class="container" style="margin-top: 100px">
-            <div class="row" style="margin-bottom: 40px">
-                <div class="col-sm-12" style="height: 100px; font-size: 36px; color: cyan;">
-                    <div>Documentation</div>
-                </div>
-                <div class="col-sm-4" style="height: 300px; font-size: 24px">
-                    <div>Getting Started</div>
-                    <div style="background-color:white; height: 200px; width: 200px;"></div>
-                </div>
-                <div class="col-sm-4" style="height: 300px; font-size: 24px">
-                    <div>Desktop</div>
-                    <div style="background-color:white; height: 200px; width: 200px;"></div>
-                </div>
-                <div class="col-sm-4" style="height: 300px; font-size: 24px">
-                    <div>Mobile</div>
-                    <div style="background-color:white; height: 200px; width: 200px;"></div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <div id="wrapper" style="background: white; height: 100%; color: black;">
 
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#" onclick="updateContent('dashboard')">
+                        Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a href="#" onclick="updateContent('getting-started')">Getting Started</a>
+                </li>
+                <li>
+                    <a href="#" onclick="updateContent('pc-games')">PC Games</a>
+                </li>
+                <li>
+                    <a href="#" onclick="updateContent('mobile-games')">Mobile Games</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            Welcome to the documentation
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
 
 
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="dist/js/bootstrap.min.js"></script>
+    <script src="scripts/docs.js"></script>
 </body>
 </html>
