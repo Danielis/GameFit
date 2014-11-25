@@ -47,19 +47,26 @@ body {
 }
 .signup-container{
 	/*margin: auto auto;*/
-	position: absolute;
-	top: 50%;
-	left: 50% ;
+  width: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -300px;
+  text-align: center;
 }
 .mission-text {
 	/*margin-right: 300px;*/
+  
 	text-align: center;
+}
+.form-signin{
+  margin: 0 auto;
 }
 #inputEmail {
 	width: auto;
-	margin-left: -85px;
+	margin:0 auto;
 }
 #signup-button {
-	margin-left: -75px;
+	margin: 0 auto;
 	width: 150px;
 }
