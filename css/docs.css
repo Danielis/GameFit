@@ -1,3 +1,7 @@
 ﻿body {
 
 }
+
+#page-content-wrapper {
+    height: 100%;
+}
