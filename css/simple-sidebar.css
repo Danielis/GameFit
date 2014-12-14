@@ -74,7 +74,7 @@
     text-decoration: none;
     /*color: #fff;*/
     background: rgba(255,255,255,0.2);
-    color: cyan;
+    color: #3498db;
 }
 
 .sidebar-nav li a:active,

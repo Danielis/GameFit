@@ -1,56 +1,21 @@
-html, body {
-    height: 100%;
-    background-color: #34495E;
-}
-body {
-    color: #fff;
-    text-align: center;
-    font-family: "OpenSans-Light", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-.jumbotron, .marketing, .contact-container {
-    text-shadow: 0 1px 3px rgba(0, 0, 0, .5);
-}
-.jumbotron {
-    background-color: #34495E;
-    padding-bottom: 0;
-    margin-bottom: 0 auto;
-}
-.marketing {
-    /*margin-bottom: 50px;*/
-}
 .marketing .col-lg-4 {
     margin-bottom: 20px;
     text-align: center;
 }
-.marketing h2 {
-    font-weight: normal;
-}
+
 .marketing .col-lg-4 p {
     margin-right: 10px;
     margin-left: 10px;
 }
 .featurette-heading {
-    font-weight: 300;
-    line-height: 1;
-    letter-spacing: -1px;
     margin-bottom: 25px;
 }
 .contact-header {
-    color: #2ECC71;
+    color: #3498db;
 }
-p > a {
+.contact-button {
     margin-top: 20px;
 }
 .form-group {
     margin-bottom: 0;
-}
-@media (min-width: 768px) {
-    .featurette-heading {
-        font-size: 50px;
-    }
-}
-@media (min-width: 992px) {
-    .featurette-heading {
-        margin-top: 120px;
-    }
 }
