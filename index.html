@@ -1,35 +1,33 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+    <!-- Title -->
     <title>GameFit</title>
     <!-- Bootstrap Core CSS-->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <!-- Custom Styles -->
     <link rel="stylesheet" href="css/main.css">
 </head>
-
-<body>
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+<body class="main-page">
+   <nav class="navbar navbar-inverse navbar-fixed-top" data-role="navigation">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" data-aria-expanded="false" data-aria-controls="navbar">
                     <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar">-</span>
-                    <span class="icon-bar">-</span>
+                    <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html"></a>
+                <a class="navbar-brand" href="#">GameFit</a>
             </div>
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="index.html">GameFit</a></li>
-                    <li><a href="#features"> Features</a></li>
+                    <li><a href="about.html">About GameFit</a></li>
                     <li><a href="documentation.html">Documentation</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -37,133 +35,65 @@
         </div>
     </nav>
 
-    <!-- <div class="masthead clearfix">
-        <div class="inner">
-          <nav>
-            <ul class="nav masthead-nav">
-              <li class="active"><a href="#">GameFit</a></li>
-              <li><a href="#">Features</a></li>
-              <li><a href="#">Documentation</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    -->
-    <div id="mainwrap">
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-                <li data-target="#myCarousel" data-slide-to="3"></li>
-            </ol>
-            <!-- Carousel items -->
-            <div class="carousel-inner">
-                <div class="active item">
-                    …
-                    <img src="images/Reaper.png">
-                    <div class="container">
-                        <div class="carousel-caption">
-                            <h1>Personalize your game</h1>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="item">
-                    …
-                    <img src="images/league.png">
-                    <div class="container">
-                        <div class="carousel-caption">
-                            <h1>Remove the hassle</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    …
-                    <img src="images/skyrim.jpg">
-                    <div class="container">
-                        <div class="carousel-caption">
-                            <h1>Simplify the Data - One simple score/Metrics</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    …
-                    <img src="images/league.png">
-                    <div class="container">
-                        <div class="carousel-caption">
-                            <h1>Easy to Integrate</h1>
-                        </div>
+    <section id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner" data-role="listbox">
+            <div class="item active">
+                <img src="images/main1.jpg" alt="">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Personalize your game</h1>
+                        <p>We provide you the tools to encourage players to be active and change how the world views gaming.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn More</a></p>
                     </div>
                 </div>
             </div>
-            <!-- Carousel nav -->
-            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div> <!-- end carousel -->
-
-        <div class="signup-container">
-            <div class="mission-text">
-                <h3>We provide you the tools to encourage players to be active and change how the world views gaming.</h3>
-            </div>
-
-            <form class="form-signin" role="form">
-                <input type="email" id="inputEmail" class="form-control" placeholder="Email address">
-                <button id="signup-button" class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
-            </form>
-        </div>
-
-        <div class="container" style="font-size: 28px;">
-            <div class="row" style="margin-bottom: 20px; margin-top: 20px; font-size: 36px; color: cyan">
-                <div class="col-12">Features</div>
-            </div>
-            <div class="row" style="margin-bottom: 40px">
-                <div class="col-sm-6" style="height: 300px;">
-                    <div>We stay up to date with all devices.</div>
-                    <img src="images/devices.jpg" style="height: 240px; width: 320px;" />
-                </div>
-                <div class="col-sm-6" style="height: 300px;">
-                    <div>You don't have to worry about device differences.</div>
-                    <img src="images/blackbox.jpg" style="height: 200px; width: 266px;" />
+            <div class="item">
+                <img src="images/main2.jpg" alt="">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Remove the hassle</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, minus delectus minima aliquid pariatur, officia nobis natus dolor, dolorem quo labore dolorum cumque aperiam soluta. Natus illum magnam unde nam.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn More</a></p>
+                    </div>
                 </div>
             </div>
-            <div class="row" style="margin-bottom: 40px">
-                <div class="col-sm-6" style="height: 300px;">
-                    <div>You can get a SCORE for a player</div>
-                    <div style="color: darkred; font-size:64px;">0 - 20</div>
-                </div>
-                <div class="col-sm-6" style="height: 300px;">
-                    <div>Or you can get POINTS for a player</div>
-                    <div style="color: darkred; font-size:64px;">1038</div>
-                </div>
-            </div>
-            <div class="row" style="margin-bottom: 40px">
-                <div class="col-sm-6" style="height: 300px;">
-                    <div>Reward players for being active outside</div>
-                    <img src="images/outdoors.jpg" style="height: 240px; width: 320px;" />
-                </div>
-                <div class="col-sm-6" style="height: 300px;">
-                    <div>Whether they are olympic athletes or just getting off the couch</div>
-                    <img src="images/olympics.jpg" style="height: 200px; width: 320px;" />
+            <div class="item">
+                <img src="images/main3.jpg" alt="">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Simplify the Data - One simple score/Metrics</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit quaerat sunt rem, distinctio maxime at ea dolore suscipit nobis possimus facere nisi a eaque nihil deleniti quasi id tempora labore!</p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn More</a></p>
+                    </div>
                 </div>
             </div>
-            <div class="row" style="margin-bottom: 40px">
-                <div class="col-sm-6" style="height: 300px;">Easy integration</div>
-                <div class="col-sm-6" style="height: 300px;">Affordable pricing</div>
+            <div class="item">
+                <img src="images/main4.jpg" alt="">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Easy to Integrate</h1>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn More</a></p>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <div>
-            Created by students at the University of Southern California  (2014)
-        </div>
-    </div>
+        <!-- Carousel nav -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </section>
 
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="dist/js/bootstrap.min.js"></script>
