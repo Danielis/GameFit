@@ -9,13 +9,15 @@
     <title>GameFit</title>
     <!-- Bootstrap Core CSS-->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <!-- Flat-UI -->
+    <link rel="stylesheet" href="lib/flat-ui/css/flat-ui.css">
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/contact.css">
+    <link media="all" type="text/css" rel="stylesheet" href="css/fonts/opensans_light/stylesheet.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top" data-role="navigation">
+    <nav class="navbar navbar-default navbar-embossed navbar-fixed-top" data-role="navigation">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" data-aria-expanded="false" data-aria-controls="navbar">
@@ -28,9 +30,9 @@
             </div>
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="about.html">About GameFit</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li><a href="documentation.html">Documentation</a></li>
-                    <li class="active"><a href="contact.html" style="color: cyan;">Contact</a></li>
+                    <li class="active"><a href="#">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -39,33 +41,32 @@
     <header class="jumbotron">
         <div class="container">
             <h1>Our Team!</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis magni aliquid inventore eius earum odit consequuntur autem provident, minus commodi quos, ad temporibus deleniti veniam sint tempora? Eveniet quasi, perferendis.</p>
         </div>
     </header>
 
     <section class="container marketing">
         <div class="row">
-            <div class="col-lg-4">
+            <div class="col-md-4">
                 <img class="img-circle" src="images/danny.jpg" alt="" style="width: 140px; height: 140px;">
-                <h2>Danny Cantwell</h2>
+                <h2 class="contact-name">Danny Cantwell</h2>
                 <p>USC - Computer Science</p>
-            </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
+            </div><!-- /.col-md-4 -->
+            <div class="col-md-4">
                 <img class="img-circle" src="images/silva.jpg" alt="" style="width: 140px; height: 140px;">
-                <h2>Daniel Silva</h2>
+                <h2 class="contact-name">Daniel<br> Silva</h2>
                 <p>USC - Computer Engineering<br> and Computer Science</p>
-            </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
+            </div><!-- /.col-md-4 -->
+            <div class="col-md-4">
                 <img class="img-circle" src="images/kabir.jpg" alt="" style="width: 140px; height: 140px;">
-                <h2>Kabir Gupta</h2>
+                <h2 class="contact-name">Kabir<br> Gupta</h2>
                 <p>USC - Computer Science</p>
-            </div><!-- /.col-lg-4 -->
+            </div><!-- /.col-md-4 -->
         </div><!-- /.row -->
-        <p><a class="btn btn-primary btn-lg scrollto contact-button" href="#contact" data-role="button">Get in Touch &raquo;</a></p>
+        <p><a class="btn btn-info btn-lg btn-embossed scrollto contact-button" href="#InputName" data-role="button">Get in Touch &raquo;</a></p>
     </section> <!-- /.marketing -->
 
-    <section id="contact" class="container">
-        <div class="row" style="text-align:left">
+    <section id="contact" class="container contact-container">
+        <div class="row contact-row" style="text-align:left">
             <div class="col-lg-6">
                 <h2 class="featurette-heading">Contact Us</h2>
                 <p class="lead"><span class="contact-header">Phone</span><br>(213)-745-9441</p>
@@ -91,7 +92,7 @@
                         <label for="InputMessage">Message</label>
                         <textarea name="InputMessage" id="InputMessage" rows="5" class="form-control" placeholder="Tell me more about GameFit!" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-success btn-lg pull-left">Submit</button>
+                    <button type="submit" class="btn btn-success btn-embossed btn-lg pull-left">Submit</button>
                 </form>
             </div>
         </div>

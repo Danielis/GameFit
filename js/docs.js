@@ -1,10 +1,9 @@
-
 function updateContent(e) {
     var pageContent = document.getElementById("page-content-wrapper");
 
     switch (e) {
-        case "dashboard":
-            pageContent.innerHTML = "DASHBOARD";
+        case "overview":
+            pageContent.innerHTML = "THIS IS AN OVERVIEW";
             break;
         case "getting-started":
             pageContent.innerHTML = "<iframe src='docs_getting_started.html' frameborder=\"no\" width=\"100%\" height=\"100%\" scrolling=\"no\"></iframe>";
