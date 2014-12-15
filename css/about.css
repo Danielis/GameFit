@@ -9,3 +9,8 @@
 .marketing .col-md-7 {
 	text-align: left;
 }
+@media (min-width: 992px) {
+    .featurette-heading {
+        margin-top: 120px;
+    }
+}

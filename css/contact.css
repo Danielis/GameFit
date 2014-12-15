@@ -2,13 +2,15 @@
     margin-bottom: 20px;
     text-align: center;
 }
-
 .marketing .col-lg-4 p {
     margin-right: 10px;
     margin-left: 10px;
 }
 .featurette-heading {
     margin-bottom: 25px;
+}
+.contact-container {
+    margin-top: -20px;
 }
 .contact-header {
     color: #3498db;
@@ -18,4 +20,9 @@
 }
 .form-group {
     margin-bottom: 0;
+}
+@media (min-width: 992px) {
+    .featurette-heading {
+        margin-top: 120px;
+    }
 }
