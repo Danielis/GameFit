@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html data-ng-app="gamefit">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Title -->
+    <title>GameFit</title>
+    <!-- Bootstrap Core CSS-->
+     <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="css/demo.css"> -->
+	<!-- <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap-theme.min.css"> -->
+    <!-- Flat-UI -->
+    <link rel="stylesheet" href="lib/flat-ui/css/flat-ui.css">
+    <!-- Font Awesome -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/main.css">
+    <link media="all" type="text/css" rel="stylesheet" href="css/fonts/opensans_light/stylesheet.css">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-default navbar-embossed navbar-fixed-top" data-role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" data-aria-expanded="false" data-aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand active" href="#">GameFit</a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="documentation.html">Documentation</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav> <!-- /.navbar -->
+
+<div class="container">
+	<h1>GameFit</h1>
+
+	<div data-ng-controller="gamefitController">
+		<div >
+			<div>
+				<select data-ng-model="currUser" data-ng-options="user.last for user in users"></select>
+			</div>
+		<div >
+			<div>
+				<div class="left raw">
+					<h4>Raw Data</h4><p class="small"> From your past runs</p>
+					<table class="table">
+						<tbody>
+							<tr>
+								<td>Name</td>
+								<td>{{currUser.first}} {{currUser.last}}</td>
+							</tr>
+							<tr>
+								<td>Age</td>
+								<td>{{currUser.Age}}</td>
+							</tr>
+							<tr>
+								<td>Weight</td>
+								<td>{{currUser.Weight}}</td>
+							</tr>
+							<tr>
+								<td>Mood</td>
+								<td>{{currUser.mood}}</td>
+							</tr>
+							<tr data-ng-repeat="activity in currUser.activity">
+								<td>{{activity.date}}</td>
+								<td>
+									<p>{{activity.runDistance}} mi</p>
+									<p>{{activity.runTime}} min</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div class="left model">
+					<h3>Summary</h3><p class="small">Generated based on your stats</p>
+					<p class="score">FitScore: {{fitScore}}%</p>
+					<p class="score">FitPoints: {{fitPoints}}/400</p>					
+					<canvas id="myCanvas" width="300" height="300" style="border:1px solid #000000;"></canvas>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="js/angular.min.js"></script>
+<script src="js/demo.js"></script>
+
+</body>
+</html>
