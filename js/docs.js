@@ -12,7 +12,7 @@ function updateContent(e) {
             pageContent.innerHTML = "<iframe src='docs_reference.html' frameborder=\"no\" width=\"100%\" height=\"100%\" scrolling=\"no\"></iframe>";
             break;
         case "demo":
-        pageContent.innerHTML = "<iframe src='demo.html' frameborder=\"no\" width=\"100%\" height=\"100%\" scrolling=\"no\"></iframe>";
+        pageContent.innerHTML = "<iframe src='docs_demo.html' frameborder=\"no\" width=\"100%\" height=\"100%\" scrolling=\"yes\"></iframe>";
         break;
     }
 }

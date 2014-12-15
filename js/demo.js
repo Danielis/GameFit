@@ -41,7 +41,7 @@ app.controller('gamefitController', function($scope, $window, userApi, userStats
 	}, true);
 
 	//Google Fit Call
-	if($window.location.href == "http://www.kabirgupta.com/itp466/GameFit/demo.html") {
+	if($window.location.href == "http://kabirgupta.com/itp466/GameFit/de.html") {
 		userApi.getCode();
 	} else {
 		var check = $window.location.search.split('&');
@@ -61,7 +61,7 @@ app.factory('userApi', function($http, $window) {
 
 	function getCode() {
 		//oauth2callback
-		$window.location.href ='https://accounts.google.com/o/oauth2/auth?scope=email%20profile&state=authCode&redirect_uri=http://www.kabirgupta.com/itp466/GameFit/demo.html&response_type=code&client_id=917701858932-q284ig8096qd2olu7ivuock67pr56u43.apps.googleusercontent.com&approval_prompt=force';
+		$window.location.href ='https://accounts.google.com/o/oauth2/auth?scope=email%20profile&state=authCode&redirect_uri=http://kabirgupta.com/itp466/GameFit/demo.html&response_type=code&client_id=917701858932-q284ig8096qd2olu7ivuock67pr56u43.apps.googleusercontent.com&approval_prompt=force';
 	}
 
 	function getToken(token) {
