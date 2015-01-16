@@ -1,6 +1,4 @@
 angular.module('demo', [])
-
-//// Controller ////
 .controller('gamefitController', function($scope, $window, userApi, userStats, userModel) {
 	// Data
 	$scope.users = [];
