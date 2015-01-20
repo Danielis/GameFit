@@ -11,7 +11,7 @@ app.config(function($routeProvider) {
 		})
 		.when('/docs', {
 			templateUrl: 'app/templates/docs.html',
-			// controller: 'DemoController'
+			controller: 'docsController'
 		})
 		.when('/contact', {
 			templateUrl: 'app/templates/contact.html',
