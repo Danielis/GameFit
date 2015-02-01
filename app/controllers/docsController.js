@@ -1,30 +1,49 @@
-angular.module('docs', ['ui.bootstrap'])
-.controller('docsController', function ($scope) {
 
+angular.module('docs', ['ui.bootstrap'])
+.controller('DocsController', function($scope) {
+    
     $scope.pages = [
         {
             title: 'Overview',
-            page: "<iframe src='app/templates/docs_overview.html' frameborder=\"no\" width=\"100%\" height=\"100%\" scrolling=\"no\"></iframe>"
+            doc: overviewContents
         },
         {
             title: 'Getting Started',
-            page: "<iframe src='app/templates/docs_getting_started.html' frameborder=\"no\" width=\"100%\" height=\"100%\" scrolling=\"no\"></iframe>"
+            doc: gettingStartedContents
         },
         {
             title: 'Reference',
-            page: "<iframe src='app/templates/docs_reference.html' frameborder=\"no\" width=\"100%\" height=\"100%\" scrolling=\"no\"></iframe>"
+            doc: referencesContents
         },
         {
             title: 'Demo',
-            page: "<iframe src='app/templates/docs_demo.html' frameborder=\"no\" width=\"100%\" height=\"100%\" scrolling=\"yes\"></iframe>"
-        },
+            doc: demoContents
+        }
     ];
 
-    $scope.$watch('document', function () {
+    $scope.setContent = function(page) {
+        document.getElementById("page-content-wrapper").innerHTML = page.doc;
+    }
 
-        // Summary Stats
-        $scope.document = $scope.pages.page;
+});
 
-    }, true);
+var overviewContents;
+var gettingStartedContents;
+var referencesContents;
+var demoContents;
 
+$.get('/app/templates/docs_overview.html', function(data){
+    overviewContents = data;
+});
+
+$.get('/app/templates/docs_getting_started.html', function(data){
+    gettingStartedContents = data;
+});
+
+$.get('/app/templates/docs_reference.html', function(data){
+    referencesContents = data;
+});
+
+$.get('/app/templates/docs_demo.html', function(data){
+    demoContents = data;
 });

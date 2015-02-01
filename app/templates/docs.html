@@ -1,11 +1,14 @@
 ﻿<link rel="stylesheet" href="css/simple-sidebar.css">
 <link rel="stylesheet" href="css/docs.css">
+
 <div id="wrapper">
+
     <!-- Sidebar -->
-    <div id="sidebar-wrapper">
+    <div id="sidebar-wrapper" >
         <ul class="sidebar-nav">
-            <li class="sidebar-brand"><a href="#" onclick="updateContent('overview')">Overview</a></li>
-            <li ng-repeat="page in pages" data-ng-model="document" title="page.title" ></li>
+            <li class="sidebar-brand"  ng-repeat="page in pages" ng-click="setContent(page)">
+                <a href="#docs" >{{page.title}}</a>
+            </li>
 
             <!--<li><a href="#" onclick="updateContent('getting-started')">Getting Started</a></li>
             <li><a href="#" onclick="updateContent('reference')">Reference</a></li>
@@ -16,9 +19,7 @@
 
     <!-- Page Content -->
     <div id="page-content-wrapper">
-        {{document}}
-        
+        <h1>Here is the documentation</h1>
+        <p>Use the sidebar for navigation</p>
     </div> <!-- /#page-content-wrapper -->
 </div>
-
-<script src="js/docs.js"></script>
